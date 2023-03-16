@@ -1,0 +1,17 @@
+﻿@page
+@model LifeTimeExample.Pages.RowCount.RowCountModel
+@{
+}
+
+<h4>Random row count values</h4>
+
+<dl class="row">
+    <div class="col">
+        <dt>The <em>Current</em> <code>DatabaseContext.RowCount</code> is</dt>
+        <dd>@Model.DataContextCount.ToString("###,###,###")</dd>
+    </div>
+    <div class="col">
+        <dt>The <em>Current</em> <code>Repository.RowCount</code> is</dt>
+        <dd>@Model.RepositoryCount.ToString("###,###,###")</dd>
+    </div>
+</dl>

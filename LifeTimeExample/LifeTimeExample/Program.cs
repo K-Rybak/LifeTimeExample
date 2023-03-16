@@ -1,7 +1,11 @@
+using LifeTimeExample.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddTransient<DataContext>();
+builder.Services.AddTransient<Repository>();
 
 var app = builder.Build();
 
